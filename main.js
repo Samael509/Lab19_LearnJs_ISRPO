@@ -49,3 +49,55 @@ for (let i = 1; i <= 4; i++) {
   }
   console.log(row);
 }
+
+function sum(a, b) {
+  return a + b;
+}
+console.log(sum(3, 5));
+
+function multiply(a, b) {
+  return a * b;
+}
+console.log(multiply(4, 5));
+
+function sayHello(name) {
+  console.log(`hello, ${name}`);
+}
+sayHello("hunk");
+
+function printInfo(name, age) {
+  console.log(`имя: ${name}, возраст: ${age}`);
+}
+printInfo("иван", 20);
+
+function greet(name = "гость") {
+  console.log("привет, " + name);
+}
+greet();
+greet("лёха");
+
+function calculateDiscount(price, discount = 10) {
+  return price - (price * discount / 100);
+}
+console.log(calculateDiscount(1000));
+console.log(calculateDiscount(1000, 20));
+
+const add = function(a, b) {
+  return a + b;
+};
+console.log(add(2, 3));
+
+const sumFunc2 = (a, b) => a + b;
+const double = x => x * 2;
+const sayGreeting = () => console.log("hello");
+const square = x => x * x;
+const calculate = (a, b) => {
+  let result = a + b;
+  return result * 2;
+};
+
+console.log(sumFunc2(3, 4));
+console.log(double(5));
+sayGreeting();
+console.log(square(4));
+console.log(calculate(2, 3));
