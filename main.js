@@ -101,3 +101,48 @@ console.log(double(5));
 sayGreeting();
 console.log(square(4));
 console.log(calculate(2, 3));
+
+let numbersArr = [1, 2, 3, 4, 5];
+console.log(numbersArr);
+
+console.log(numbersArr[0]);
+console.log(numbersArr[1]);
+
+console.log(numbersArr.length);
+
+let colors = ["red", "green", "blue"];
+console.log(colors[0]);
+console.log(colors[colors.length - 1]);
+colors[1] = "yellow";
+console.log(colors);
+
+numbersArr.push(10);
+console.log(numbersArr);
+numbersArr.pop();
+console.log(numbersArr);
+
+let students = [];
+students.push("Иван");
+students.push("Мария");
+students.push("Алексей");
+students.pop();
+console.log(students);
+
+let numbers2 = [10, 20, 30];
+for (let i = 0; i < numbers2.length; i++) {
+  console.log(numbers2[i]);
+}
+
+for (let value of numbers2) {
+  console.log(value);
+}
+
+let mixedArray = [1, "text", true, 3.14];
+console.log(mixedArray);
+
+let cities = ["Москва", "Варшава", "Берлин", "Париж"];
+let searchCity = "Берлин";
+console.log(cities.includes(searchCity));
+if (cities.includes(searchCity)) {
+  console.log(cities.indexOf(searchCity));
+}
